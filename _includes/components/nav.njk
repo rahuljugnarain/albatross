@@ -1,15 +1,13 @@
-{% set navPages = collections.all | eleventyNavigation %}
 <div class="nav-actions">
-  {% if navPages and navPages | length %}
-    <nav aria-label="Primary">
-      <ul class="nav-links">
-        {%- for entry in navPages %}
-          <li>
-            <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-      </ul>
-    </nav>
-  {% endif %}
+  <nav aria-label="Primary">
+    <ul class="nav-links">
+      <li>
+        <a href="{{ '/' | url }}"{% if page.url == '/' %} data-current="current item"{% endif %}>Home</a>
+      </li>
+      <li>
+        <a href="{{ '/#contact' | url }}">Contact</a>
+      </li>
+    </ul>
+  </nav>
   <a class="btn btn-outline" href="https://www.amazon.co.uk/dp/B0CRCJN7DB" target="_blank" rel="noopener">Find us on Amazon</a>
 </div>

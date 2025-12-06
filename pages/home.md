@@ -14,13 +14,13 @@ eleventyNavigation:
     <div class="hero-copy">
       <p class="tagline">Introducing</p>
       <h1>Compression Packing Cubes</h1>
-      <p class="lead">Minimal, affordable cubes that compress your gear and keep everything organized for every trip.</p>
+      <p class="lead">Minimal, affordable cubes that compress your gear and keep everything organised for every trip.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://www.amazon.co.uk/dp/B0CRCJN7DB" target="_blank" rel="noopener">Buy on Amazon</a>
       </div>
     </div>
     <div class="hero-media">
-      <img src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/6637c9d9c6483e1c7ad99368_main_image_webflow.png" alt="Compression packing cubes from Albatross">
+      <img src="/img/albatross/hero.png" alt="Compression packing cubes from Albatross">
     </div>
   </div>
 </section>
@@ -44,7 +44,7 @@ eleventyNavigation:
       <p class="copy-large">Our set of 4 packing cubes includes 1 small cube, 2 medium sized cubes, and one large cube.</p>
     </div>
     <div class="included-media">
-      <img src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/661fc289f449ee2325b8bcd4_what%27s_included.png" alt="Everything inside the Albatross packing cube set">
+      <img src="/img/albatross/included.png" alt="Everything inside the Albatross packing cube set">
     </div>
   </div>
 </section>
@@ -52,22 +52,22 @@ eleventyNavigation:
 <section class="features section-block">
   <div class="container feature-grid">
     <div class="feature-card">
-      <img class="feature-icon" src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/661fd2cc9ed7fa222c4d53cb_verified_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img class="feature-icon" src="/img/albatross/icon-built.png" alt="">
       <h3>Built to last</h3>
       <p>Only the best materials, from 300D polyester to YKK zippers.</p>
     </div>
     <div class="feature-card">
-      <img class="feature-icon" src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/661fd3412a069ac68044c77a_approval_delegation_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img class="feature-icon" src="/img/albatross/icon-minimal.png" alt="">
       <h3>Minimal</h3>
       <p>Designed to be easy to use and look great however you pack it.</p>
     </div>
     <div class="feature-card">
-      <img class="feature-icon" src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/661fd3b1b8a0f4ba866d6c5f_output_circle_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img class="feature-icon" src="/img/albatross/icon-affordable.png" alt="">
       <h3>Affordable</h3>
       <p>Reasonably priced so that smart packing is available to everyone.</p>
     </div>
     <div class="feature-card">
-      <img class="feature-icon" src="https://cdn.prod.website-files.com/661f847887812963c8509d3a/661fd22a2b1f86bc93b89308_eco_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img class="feature-icon" src="/img/albatross/icon-sustainable.png" alt="">
       <h3>Sustainable</h3>
       <p>Built from recycled polyester certified by the Global Recycled Standard.</p>
     </div>
@@ -80,7 +80,9 @@ eleventyNavigation:
     <div class="contact-body">
       <p class="tagline">Want to get in touch?</p>
       <h2>Contact us</h2>
-      <form name="contact" method="POST" data-netlify="true" class="form-grid">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form-grid">
+        <input type="hidden" name="form-name" value="contact">
+        <input class="input" type="text" name="bot-field" style="display:none">
         <input class="input" type="text" name="name" autocomplete="name" placeholder="Enter your name" required>
         <input class="input" type="email" name="email" autocomplete="email" placeholder="Enter your email" required>
         <textarea class="input" name="message" placeholder="Enter your message here" required></textarea>
