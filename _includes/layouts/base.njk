@@ -3,16 +3,16 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="{% if section %}{{ section }}-body{% endif %}">
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
+		<header class="topbar">
+			<div class="container nav-inner">
+				<a class="brand" href="{{ '/' | url }}">albatross</a>
+				{% include "components/nav.njk" %}
+			</div>
 		</header>
 
-		<main>
+		<main class="{% if section %}{{ section }}-page{% endif %}">
 			{{ content | safe }}
 		</main>
 
